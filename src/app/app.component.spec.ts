@@ -1,12 +1,14 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        MainNavComponent
+        MainNavComponent,
+        PageHeaderComponent
       ],
     }).compileComponents();
   }));
