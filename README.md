@@ -1,27 +1,27 @@
-# ngNewAge
+# NgNewAge
 
-An Angular app landing page theme
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
-<br>
+## Development server
 
-New Age is a Bootstrap app landing page theme to help you beautifully showcase your web app or anything else! This theme features a bold, colorful design with various content sections that will be an excellent boilerplate for yoru next Bootstrap based project!
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-__[Live preview on Heroku](https://startbootstrap-new-age.herokuapp.com)__
+## Code scaffolding
 
-<br>
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-<a href="https://startbootstrap-new-age.herokuapp.com"><img alt="Live preview" src="https://github.com/krzysiekpiasecki/ngNewAge/blob/master/src/assets/img/preview.png" /></a>
+## Build
 
-<br>
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Running unit tests
 
-### Quick start
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```bash
-$ git clone https://github.com/krzysiekpiasecki/ngNewAge.git
-$ cd ngNewAge
-$ npm install
-$ ng serve
+## Running end-to-end tests
 
-Go to: http://localhost:4200
-```
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
