@@ -1,15 +1,15 @@
 import { TestBed, async } from '@angular/core/testing';
-import { MainNavComponent } from './main-nav.component';
-describe('MainNavComponent', () => {
+import { PageDownloadComponent } from './page-download.component';
+describe('PageDownloadComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        MainNavComponent
+        PageDownloadComponent
       ],
     }).compileComponents();
   }));
   it('should create', async(() => {
-    const fixture = TestBed.createComponent(MainNavComponent);
+    const fixture = TestBed.createComponent(PageDownloadComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
