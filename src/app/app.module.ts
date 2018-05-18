@@ -9,6 +9,8 @@ import { PageCtaComponent } from './page-cta/page-cta.component';
 import { PageFeaturesComponent } from './page-features/page-features.component';
 import { PageFooterComponent } from './page-footer/page-footer.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
+import { CloseMenuDirective } from './close-menu.directive';
+import { BodyDirective } from './body.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { PageContactComponent } from './page-contact/page-contact.component';
     PageContactComponent,
     PageCtaComponent,
     PageFeaturesComponent,
-    PageFooterComponent
+    PageFooterComponent,
+    CloseMenuDirective,
+    BodyDirective
   ],
   imports: [
     BrowserModule
