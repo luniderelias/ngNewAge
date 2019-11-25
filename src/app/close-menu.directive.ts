@@ -9,6 +9,6 @@ import { Component, HostListener, Directive, ElementRef } from '@angular/core';
 export class CloseMenuDirective {
   constructor(private el: ElementRef) { }
   @HostListener('click') onClick() {
-    $('.navbar-collapse').collapse('hide');
+    (<any>$('.navbar-collapse')).collapse('hide');
   }
 }

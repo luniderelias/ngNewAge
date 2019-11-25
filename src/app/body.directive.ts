@@ -9,7 +9,7 @@ export class BodyDirective implements OnInit {
 
   ngOnInit() {
     // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
+    (<any>$('body')).scrollspy({
       target: '#mainNav',
       offset: 354
     });

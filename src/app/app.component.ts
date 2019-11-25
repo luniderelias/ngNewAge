@@ -7,30 +7,29 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'New Age';
+  title = 'Tap Learn';
 
   ngOnInit() {
-    
-      // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
+  // Smooth scrolling using jQuery easing
+  (<any>$('a.js-scroll-trigger[href*="#"]:not([href="#"])')).click(function() {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+      let target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 48)
-        }, 1000, "easeInOutExpo");
+        }, 1000, 'easeInOutExpo');
         return false;
       }
     }
   });
 
 
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
+  const navbarCollapse = function() {
+    if ($('#mainNav').offset().top > 100) {
+      $('#mainNav').addClass('navbar-shrink');
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+      $('#mainNav').removeClass('navbar-shrink');
     }
   };
   // Collapse now if page is not at top
