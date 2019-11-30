@@ -13,6 +13,7 @@
                     "styleext": "scss"
                 }
             },
+
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
@@ -30,10 +31,9 @@
                             "src/styles.scss"
                         ],
                         "scripts": [
-                            "./node_modules/jquery/dist/jquery.js",
+                            "./node_modules/jquery/dist/jquery.min.js",
                             "./node_modules/bootstrap/dist/js/bootstrap.js",
-                            "./node_modules/jquery-easing/jquery.easing.1.3.js",
-                            "src/assets/js/tap-learn.js"
+                            "./node_modules/jquery-easing/jquery.easing.1.3.js"
                         ]
                     },
                     "configurations": {
