@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~bootstrap/dist/css/bootstrap.css";
-@import "./assets/device-mockups/device-mockups.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./assets/device-mockups/device-mockups.min.css";
 @import "./assets/scss/new-age.scss";
+@import "~font-awesome/css/font-awesome.css";
 @import "~simple-line-icons/css/simple-line-icons.css";
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
-    src: "~font-awesome/css/font-awesome.css", "simple-line-icons/css/simple-line-icons.css", url("https://fonts.googleapis.com/css?family=Lato"), url("https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"), url("https://fonts.googleapis.com/css?family=Muli");
+    src: url("https://fonts.googleapis.com/css?family=Lato"), url("https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"), url("https://fonts.googleapis.com/css?family=Muli");
     font-style: normal;
     font-display: swap;
 }

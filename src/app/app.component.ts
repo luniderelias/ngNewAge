@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import 'jquery';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -18,20 +18,21 @@ export class AppComponent implements OnInit {
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 48)
-        }, 1000, 'easeInOutExpo');
+        }, 1000, 'swing');
         return false;
       }
     }
-    return true;
   });
 
-
   const navbarCollapse = function() {
-    if ($('#mainNav').offset().top > 100) {
-      $('#mainNav').addClass('navbar-shrink');
+    const nav = (<any>$('#mainNav'));
+    if (nav.length) {
+    if (nav.offset().top > 100) {
+      nav.addClass('navbar-shrink');
     } else {
-      $('#mainNav').removeClass('navbar-shrink');
+      nav.removeClass('navbar-shrink');
     }
+  }
   };
   // Collapse now if page is not at top
   navbarCollapse();
